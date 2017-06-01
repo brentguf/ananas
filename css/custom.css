@@ -2,9 +2,8 @@
   max-width: 968px;
 }
 
-.stat-box {
-	background-color: #D1913E;
-	border: 1px solid black;
+.background-1 {
+	background-color: #FFF;
 }
 
 .background-2 {
@@ -13,6 +12,25 @@
 
 .background-3 {
 	background-color: #D1913E
+}
+
+.background-4 {
+	background-color: #EDE6DE;
+}
+
+.banner {
+	background-image: url(../img/png/banner-bg.png);
+	max-width: 100%;
+}
+
+.stat-box {
+	background-color: #D1913E;
+	margin-right: 20px;
+	max-width: 227px;
+}
+
+.stat-box:last-of-type {
+	margin-right: 0;
 }
 
 img {
