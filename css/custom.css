@@ -3,12 +3,16 @@
 }
 
 .stat-box {
-	background-color: pink;
+	background-color: #D1913E;
 	border: 1px solid black;
 }
 
 .background-2 {
 	background-color: #EDE6DE;
+}
+
+.background-3 {
+	background-color: #D1913E
 }
 
 img {
