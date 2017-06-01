@@ -2,6 +2,8 @@
   max-width: 968px;
 }
 
+/* Background colors */
+
 .background-1 {
 	background-color: #FFF;
 }
@@ -18,19 +20,66 @@
 	background-color: #EDE6DE;
 }
 
+
+/* Info bar above the header/nav */
+
+.info-bar {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* Main header/nav */
+
+.nav-items-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.horizontal-ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 1rem 0; 
+}
+
+.horizontal-ul li {
+	margin-bottom: 0;
+	margin-right: .5rem;
+}
+
+/* Welcome banner */
+
 .banner {
 	background-image: url(../img/png/banner-bg.png);
-	max-width: 100%;
+	color: #FFF;
+	text-align: center;
 }
+
+.banner a {
+	border: 1px solid #FFF;
+	color: inherit;
+}
+
+/**/
 
 .stat-box {
 	background-color: #D1913E;
+	display: flex;
+	flex-direction: column;
 	margin-right: 20px;
 	max-width: 227px;
 }
 
 .stat-box:last-of-type {
 	margin-right: 0;
+}
+
+/* Newsletter form */
+
+.newsletter-form {
+	color: #FFF;
+	display: flex;
+	justify-content: center;
 }
 
 img {

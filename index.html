@@ -8,43 +8,47 @@
 	<title>ananas</title>
 </head>
 <body>
+  
   <div class="background-4">
   	<div class="container info-bar">
   	  <div class="contact-info">
   		  <span>+32 11 74 06 96</span>
   		  <span>info@ananas.be</span>
   	  </div>
-  	  <ul>
-  		  <li>NL</li>
-  		  <li>FR</li>
-  		  <li>EN</li>
-  	  </ul>
+  	  <div class="language-select">
+	  		<select name="" id="language-options">
+	  			<option value="nl">NL</option>
+	  			<option value="fr">FR</option>
+	  			<option value="en">EN</option>
+	  		</select>
+  	  </div>
     </div>
   </div>
   
-  
-  <header class="background-1">
-    <div class="container">
-  		<nav>
-  		  <div class="logo-container">
-  		  	<div class="logo">
-  		  	  <img src="" alt="">
-  		  	</div>
-  		  	<div class="logo-text">
-  		  	  <img src="" alt="">
-  		  	</div>
-  		  </div>
-  	    <ul>
-  	    	<li>Wie we zijn</li>
-  	    	<li>Wat we doen</li>
-  	    	<li>Locaties</li>
-  	    	<li>Contact</li>
-  	    	<li>Nieuws</li>
-  	    	<li>Jobs</li>
-  	    	<li>Veelgestelde vragen</li>
-  	    </ul>
-  	  </nav>
-    </div>
+  <header class="container background-1">
+		<nav class="row">
+		  <div class="logo-container col-md-3">
+		  	<div class="logo">
+		  	  <img src="img/svg/header-pineapple.svg" alt="">
+		  	</div>
+		  	<div class="logo-text">
+		  	  <img src="" alt="">
+		  	</div>
+		  </div>
+		  <div class="nav-items-container col-md-9">
+		  	<ul class="horizontal-ul">
+		    	<li>Wie we zijn</li>
+		    	<li>Wat we doen</li>
+		    	<li>Locaties</li>
+		    	<li>Contact</li>
+		    </ul>
+		    <ul class="horizontal-ul">
+		    	<li>Nieuws</li>
+		    	<li>Jobs</li>
+		    	<li>Veelgestelde vragen</li>
+		    </ul>
+		  </div>
+	  </nav>
   </header>
   
 	<section class="banner">
@@ -100,10 +104,18 @@
 	  		<h2>Ananas in cijfers</h2>
       </div>
   	  <div class="row">
-  	    <div class="stat-box col-xs-12 col-md-6 col-lg-3">950</div>
-  		  <div class="stat-box col-xs-12 col-md-6 col-lg-3">5953</div>
-  		  <div class="stat-box col-xs-12 col-md-6 col-lg-3">50</div>
-  		  <div class="stat-box col-xs-12 col-md-6 col-lg-3">25</div>
+  	    <div class="stat-box col-xs-12 col-md-6 col-lg-3">
+  	      950<span>klanten in de BeNeLux</span>
+  	    </div>
+  		  <div class="stat-box col-xs-12 col-md-6 col-lg-3">
+  		    5953<span>Ananassen verkocht in 2017</span>
+  		  </div>
+  		  <div class="stat-box col-xs-12 col-md-6 col-lg-3">
+  		    50<span>Ananassen per dag</span>
+  		  </div>
+  		  <div class="stat-box col-xs-12 col-md-6 col-lg-3">
+  		    25<span>Gespecialiseerde stagemedewerkers</span>
+  		  </div>
   		</div>	
 	  	<div class="row"><a href="">Meer over ons</a></div>
 	  </div>
@@ -162,9 +174,9 @@
 	  </div>  
 	</section>
 
-	<div class="newsletter-form background-3">
+	<div class="background-3">
     <div class="container">
-      <form action="">
+      <form class="newsletter-form" action="">
         <div class="newsletter-info">
         	<label>Schrijf je in voor onze nieuwsbrief</label>
         </div>
