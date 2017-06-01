@@ -1,0 +1,16 @@
+.container {
+  max-width: 968px;
+}
+
+.stat-box {
+	background-color: pink;
+	border: 1px solid black;
+}
+
+.background-2 {
+	background-color: #EDE6DE;
+}
+
+img {
+	max-width: 100%
+}
