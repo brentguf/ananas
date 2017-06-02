@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-	color: #433B3D;
+	color: #D1913E;
 	text-decoration: none;
 }
 
@@ -56,7 +56,7 @@ cite {
 }
 
 img {
-	max-width: 100%
+	object-fit: contain;
 }
 
 .container {
@@ -178,6 +178,11 @@ img {
 }
 
 /* News section */
+
+.blog-post {
+	display: flex;
+	align-items: flex-start;
+}
 
 .article-date {
 	color: #D1913E;
