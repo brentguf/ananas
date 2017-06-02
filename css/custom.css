@@ -1,7 +1,11 @@
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 /* General */
+
+@font-face {
+	font-family: "Besom";
+	src: url("../fonts/besom.ttf");
+}
 
 body {
 	color: #433B3D;
@@ -117,6 +121,7 @@ img {
 
 .logo-text {
 	color: #D1913E;
+	font-family: "Besom";
 }
 
 .main-items {
