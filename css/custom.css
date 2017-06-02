@@ -84,6 +84,10 @@ img {
 	object-fit: contain;
 }
 
+img.favicon {
+	margin-right: .6rem;
+}
+
 .container {
   max-width: 968px;
 }
@@ -128,27 +132,58 @@ img {
 	display: flex;
 	font-weight: 300;
 	justify-content: flex-end;
+	padding: .5rem 0;
+}
+
+.info-bar span {
+	align-items: center;
+  display: flex;
+	margin-right: 1.5rem;
+}
+
+.info-bar span:last-of-type {
+	margin-right: 4rem;
 }
 
 /* Main header/nav */
 
+header {
+	padding: 1.2rem;
+}
+
+.logo-container {
+	align-items: center;
+	display: flex;
+}
+
+.logo-container img {
+	margin-right: .9rem;
+}
+
+.logo-container h1 {
+	align-self: flex-end;
+	color: #D1913E;
+	font-family: "Besom";
+	margin-bottom: 0;
+}
+
 .nav-items-container {
+	align-items: flex-end;
 	display: flex;
 	justify-content: space-between;
 }
 
-.logo-container {
-	display: flex;
-}
-
-.logo-text h1 {
-	color: #D1913E;
-	font-family: "Besom";
-}
-
 .main-items {
-	text-transform: uppercase;
 	font-weight: 600;
+	padding: .8rem 0;
+	text-transform: uppercase;
+}
+
+.main-items li {
+	margin-right: 1.75rem;
+}
+.main-items li {
+	margin-right: 1.75rem;
 }
 
 .side-items {
