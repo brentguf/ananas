@@ -1,9 +1,80 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+*/
+
+/* General */
+
 body {
 	color: #433B3D;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #D1913E;
+	font-size: 1rem;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover {
+	color: #433B3D;
+	text-decoration: none;
+}
+
+a.to-full-page {
+	color: #D1913E;
+}
+
+a.to-full-page:after {
+	content: " →";
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+blockquote {
+	padding-left: 30px;
+}
+
+blockquote:before {
+	content: url("../img/favicons/quote.png");
+	position: absolute;
+	top: 10px;
+	left: 0px;
+}
+
+cite {
+	color: #D1913E;
+	font-style: normal;
+}
+
+img {
+	max-width: 100%
 }
 
 .container {
   max-width: 968px;
+}
+
+/* Horizontal UL styling */
+
+.horizontal-ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 1rem 0; 
+}
+
+.horizontal-ul li {
+	margin-bottom: 0;
+	margin-right: .5rem;
 }
 
 /* Background colors */
@@ -40,6 +111,14 @@ body {
 	justify-content: space-between;
 }
 
+.logo-container {
+	display: flex;
+}
+
+.logo-text {
+	color: #D1913E;
+}
+
 .main-items {
 	text-transform: uppercase;
 }
@@ -58,8 +137,16 @@ body {
 
 .actions a {
 	border: 1px solid #FFF;
+	border-radius: 5px;
 	color: inherit;
+	padding: 1rem 2rem;
 	text-transform: uppercase;
+}
+
+.actions a:hover {
+	background-color: #FFF;
+	color: #D1913E;
+  text-decoration: none;
 }
 
 /* Features section */
@@ -115,61 +202,5 @@ body {
 	text-transform: uppercase;
 }
 
-/* General */
 
-h1, h2 {
-	text-transform: uppercase;
-}
-
-h2 {
-	color: #D1913E;
-	font-size: 1rem;
-}
-
-a.to-full-page {
-	color: #D1913E;
-}
-
-a.to-full-page:after {
-	content: " →";
-}
-
-ul {
-	list-style: none;
-	padding-left: 0;
-}
-
-blockquote {
-	padding-left: 30px;
-}
-
-blockquote:before {
-	content: url("../img/favicons/quote.png");
-	position: absolute;
-	top: 10px;
-	left: 0px;
-}
-
-cite {
-	color: #D1913E;
-	font-style: normal;
-}
-
-img {
-	max-width: 100%
-}
-
-/* Horizontal UL styling */
-
-.horizontal-ul {
-	list-style: none;
-	display: flex;
-	margin: 0;
-	padding: 1rem 0; 
-}
-
-.horizontal-ul li {
-	margin-bottom: 0;
-	margin-right: .5rem;
-}
 
