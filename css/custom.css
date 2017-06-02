@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 @font-face {
 	font-family: "Besom";
@@ -10,15 +10,29 @@
 body {
 	color: #433B3D;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
 }
 
 h1, h2 {
 	text-transform: uppercase;
 }
 
+h1 {
+	font-weight: 700;
+}
+
 h2 {
 	color: #D1913E;
-	font-size: 1rem;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1.1rem;
+}
+
+p {
+	font-weight: 400;
 }
 
 a {
@@ -47,6 +61,11 @@ blockquote {
 	padding-left: 30px;
 }
 
+blockquote p {
+	font-size: 1.25rem;
+	font-weight: 300;
+}
+
 blockquote:before {
 	content: url("../img/svg/quote.svg");
 	position: absolute;
@@ -56,7 +75,9 @@ blockquote:before {
 
 cite {
 	color: #D1913E;
+	font-size: 1.06667rem;
 	font-style: normal;
+	font-weight: 600;
 }
 
 img {
@@ -105,6 +126,7 @@ img {
 .info-bar {
 	color: #797979;
 	display: flex;
+	font-weight: 300;
 	justify-content: flex-end;
 }
 
@@ -119,17 +141,19 @@ img {
 	display: flex;
 }
 
-.logo-text {
+.logo-text h1 {
 	color: #D1913E;
 	font-family: "Besom";
 }
 
 .main-items {
 	text-transform: uppercase;
+	font-weight: 600;
 }
 
 .side-items {
 	color: #797979;
+	font-weight: 300;
 }
 
 /* Welcome banner */
@@ -140,12 +164,24 @@ img {
 	text-align: center;
 }
 
+.banner h1 {
+	font-size: 2rem;
+}
+
+.banner p {
+	font-size: 1.06667rem;
+	font-weight: 400;
+}
+
 .actions a {
 	border: 1px solid #FFF;
-	border-radius: 5px;
+	border-radius: 3px;
 	color: inherit;
-	padding: 1rem 2rem;
+	display: inline-block;
+	font-size: 0.93333rem;
+	padding: 1rem;
 	text-transform: uppercase;
+  width: 167px;
 }
 
 .actions a:hover {
@@ -167,7 +203,8 @@ img {
 	color: #FFF;
 	display: flex;
 	flex-direction: column;
-	font-size: 2rem;
+	font-size: 2.66667rem;
+	font-weight: 700;
 	margin-right: 20px;
 	max-width: 227px;
 	text-align: center;
@@ -198,17 +235,21 @@ img {
 .newsletter-form {
 	color: #FFF;
 	display: flex;
+	font-size: 1.2rem;
+	font-weight: 700;
 	justify-content: center;
 	text-transform: uppercase;
 }
 
 .newsletter-form input[type=submit] {
+	font-size: .93333rem;
 	text-transform: uppercase;
 }
 
 /* Sitemap */
 
 .sitemap-header {
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
