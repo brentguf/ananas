@@ -1,3 +1,7 @@
+body {
+	color: #433B3D;
+}
+
 .container {
   max-width: 968px;
 }
@@ -24,6 +28,7 @@
 /* Info bar above the header/nav */
 
 .info-bar {
+	color: #797979;
 	display: flex;
 	justify-content: flex-end;
 }
@@ -34,6 +39,127 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+.main-items {
+	text-transform: uppercase;
+}
+
+.side-items {
+	color: #797979;
+}
+
+/* Welcome banner */
+
+.banner {
+	background-image: url(../img/png/banner-bg.png);
+	color: #FFF;
+	text-align: center;
+}
+
+.actions a {
+	border: 1px solid #FFF;
+	color: inherit;
+	text-transform: uppercase;
+}
+
+/* Features section */
+
+.features-ul {
+	list-style-image: url(../img/favicons/checkmark.png);
+}
+
+/* Stats section */
+
+.stat-box {
+	background-color: #D1913E;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	font-size: 2rem;
+	margin-right: 20px;
+	max-width: 227px;
+	text-align: center;
+}
+
+.stat-box:last-of-type {
+	margin-right: 0;
+}
+
+.stat-description {
+	color: #443C3D;
+	font-size: 1rem;
+}
+
+/* News section */
+
+.article-date {
+	color: #D1913E;
+}
+
+/* Newsletter form */
+
+.newsletter-form {
+	color: #FFF;
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+.newsletter-form input[type=submit] {
+	text-transform: uppercase;
+}
+
+/* Sitemap */
+
+.sitemap-header {
+	text-transform: uppercase;
+}
+
+/* General */
+
+h1, h2 {
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #D1913E;
+	font-size: 1rem;
+}
+
+a.to-full-page {
+	color: #D1913E;
+}
+
+a.to-full-page:after {
+	content: " →";
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+blockquote {
+	padding-left: 30px;
+}
+
+blockquote:before {
+	content: url("../img/favicons/quote.png");
+	position: absolute;
+	top: 10px;
+	left: 0px;
+}
+
+cite {
+	color: #D1913E;
+	font-style: normal;
+}
+
+img {
+	max-width: 100%
+}
+
+/* Horizontal UL styling */
 
 .horizontal-ul {
 	list-style: none;
@@ -47,41 +173,3 @@
 	margin-right: .5rem;
 }
 
-/* Welcome banner */
-
-.banner {
-	background-image: url(../img/png/banner-bg.png);
-	color: #FFF;
-	text-align: center;
-}
-
-.banner a {
-	border: 1px solid #FFF;
-	color: inherit;
-}
-
-/**/
-
-.stat-box {
-	background-color: #D1913E;
-	display: flex;
-	flex-direction: column;
-	margin-right: 20px;
-	max-width: 227px;
-}
-
-.stat-box:last-of-type {
-	margin-right: 0;
-}
-
-/* Newsletter form */
-
-.newsletter-form {
-	color: #FFF;
-	display: flex;
-	justify-content: center;
-}
-
-img {
-	max-width: 100%
-}
