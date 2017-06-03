@@ -25,6 +25,8 @@ h2 {
 	color: #CC9132;
 	font-size: 1.2rem;
 	font-weight: 700;
+	letter-spacing: .03rem;
+	margin-bottom: 1rem;
 }
 
 h3 {
@@ -51,6 +53,7 @@ a:hover {
 
 a.to-full-page {
 	color: #CC9132;
+	font-size: 1rem;
 }
 
 a.to-full-page:after {
@@ -255,7 +258,27 @@ header {
 /* Features section */
 
 .features-ul {
-	list-style-image: url(../img/favicons/checkmark.png);
+	list-style: none;
+	padding-top: 1.2rem;
+}
+
+.features-ul li {
+	background-image: url(../img/favicons/checkmark.png);
+	background-position: 0 .25rem;
+	background-repeat: no-repeat;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	padding-left: 2.1rem;
+}
+
+.features-ul li:last-of-type {
+	margin-bottom: 2rem;
+}
+
+/* What we do section */
+
+.video-preview {
+	margin-right: 1rem;
 }
 
 /* Stats section */
