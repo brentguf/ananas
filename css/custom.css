@@ -65,6 +65,12 @@ ul {
 	padding-left: 0;
 }
 
+address {
+	color: #797979;;
+	line-height: 1.9rem;
+	margin-top: -.2rem
+}
+
 blockquote {
 	padding: 0 3rem 0 5rem;
 	margin-bottom: 0;
@@ -116,6 +122,12 @@ img.favicon {
 	margin-right: .5rem;
 }
 
+/* Make item invisible */
+
+.invisible {
+	opacity: 0;
+}
+
 /* Background colors */
 
 .background-1 {
@@ -164,11 +176,11 @@ header {
 .logo-container {
 	align-items: center;
 	display: flex;
-	padding-left: 0;
+	margin-bottom: 2.2rem;
 }
 
 .logo-container img {
-	margin-right: .9rem;
+	margin-right: .5rem;
 }
 
 .logo-container h1 {
@@ -176,6 +188,7 @@ header {
 	color: #CC9132;
 	font-family: "Besom";
 	margin-bottom: 0;
+	padding-top: .75rem;
 }
 
 .nav-items-container {
@@ -412,13 +425,26 @@ header {
 	padding: .75rem 1.35rem;
 }
 
+/* Footer */
 
-
-/* Sitemap */
+footer {
+	padding: 3rem 0;
+}
 
 .sitemap-header {
+	display: inline-block;
 	font-weight: 600;
+	margin-bottom: .9rem;
 	text-transform: uppercase;
+}
+
+.sitemap li {
+	color: #797979;
+	margin-bottom: .5rem;
+}
+
+.social-links-ul {
+	padding-top: 0;
 }
 
 
