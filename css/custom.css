@@ -41,6 +41,7 @@ a {
 
 a:hover {
 	color: #D1913E;
+	cursor: pointer;
 	text-decoration: none;
 }
 
@@ -132,13 +133,13 @@ img.favicon {
 	display: flex;
 	font-weight: 300;
 	justify-content: flex-end;
-	padding: .5rem 0;
+	padding: .3rem 0;
 }
 
 .info-bar span {
 	align-items: center;
   display: flex;
-	margin-right: 1.5rem;
+	margin-right: 1.4rem;
 }
 
 .info-bar span:last-of-type {
@@ -148,12 +149,13 @@ img.favicon {
 /* Main header/nav */
 
 header {
-	padding: 1.2rem;
+	padding: 1.3rem;
 }
 
 .logo-container {
 	align-items: center;
 	display: flex;
+	padding-left: 0;
 }
 
 .logo-container img {
@@ -170,25 +172,32 @@ header {
 .nav-items-container {
 	align-items: flex-end;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+	padding-right: 0;
 }
 
 .main-items {
 	font-weight: 600;
+	margin-right: 1rem;
 	padding: .8rem 0;
 	text-transform: uppercase;
 }
 
 .main-items li {
-	margin-right: 1.75rem;
-}
-.main-items li {
-	margin-right: 1.75rem;
+	margin-right: 1.6rem;
 }
 
 .side-items {
 	color: #797979;
 	font-weight: 300;
+}
+
+.side-items li {
+	margin-right: 1.1rem;
+}
+
+.side-items li:last-of-type {
+	margin-right: 0rem;
 }
 
 /* Welcome banner */
