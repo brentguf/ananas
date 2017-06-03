@@ -334,7 +334,7 @@ header {
 /* News section */
 
 .news-section {
-	padding: 4rem 0;
+	padding: 4rem 0 7rem;
 }
 
 .article-container {
@@ -380,13 +380,39 @@ header {
 }
 
 .newsletter-form label {
+	letter-spacing: .05rem;
 	margin-bottom: 0;
 }
 
-.newsletter-form input[type=submit] {
-	font-size: .93333rem;
-	text-transform: uppercase;
+.newsletter-message {
+	margin-right: 2rem;
 }
+
+.newsletter-action {
+	display: flex;
+}
+
+.newsletter-action input[type=text] {
+	background: rgba(255,255,255,.5);
+	border: none;
+	flex-grow: 2;
+	padding: .5rem;
+	width: 330px;
+}
+
+.newsletter-action input[type=submit] {
+	background-color: #FFF;
+	border: none;
+	color: #CC9132;
+	flex-grow: 1;
+	font-size: .8rem;
+	font-weight: 600;
+	letter-spacing: .025rem;
+	text-transform: uppercase;
+	padding: .75rem 1.35rem;
+}
+
+
 
 /* Sitemap */
 
