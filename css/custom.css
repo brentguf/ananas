@@ -176,7 +176,6 @@ header {
 .logo-container {
 	align-items: center;
 	display: flex;
-	margin-bottom: 2.2rem;
 }
 
 .logo-container img {
@@ -429,6 +428,10 @@ header {
 
 footer {
 	padding: 3rem 0;
+}
+
+footer .logo-container {
+	margin-bottom: 2.2rem;
 }
 
 .sitemap-header {
