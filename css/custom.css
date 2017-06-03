@@ -66,24 +66,26 @@ ul {
 }
 
 blockquote {
-	padding-left: 30px;
+	padding: 0 3rem 0 5rem;
+	margin-bottom: 0;
 }
 
 blockquote p {
-	font-size: 1.25rem;
+	font-size: 1.275rem;
 	font-weight: 300;
+	letter-spacing: .04rem;
 }
 
 blockquote:before {
 	content: url("../img/svg/quote.svg");
 	position: absolute;
-	top: 10px;
-	left: 0px;
+	top: 1.6rem;
+	left: 2rem;
 }
 
 cite {
 	color: #CC9132;
-	font-size: 1.06667rem;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: 600;
 }
@@ -283,6 +285,10 @@ header {
 
 /* Stats section */
 
+.stats {
+	margin-bottom: 1rem;
+}
+
 .stat-box {
 	background-color: #CC9132;
 	color: #FFF;
@@ -292,6 +298,7 @@ header {
 	font-weight: 700;
 	margin-right: 20px;
 	max-width: 227px;
+	padding: 1rem 2rem 2.5rem;
 	text-align: center;
 }
 
@@ -299,9 +306,29 @@ header {
 	margin-right: 0;
 }
 
+.stat-icon {
+	margin-bottom: .6rem;
+}
+
+.stat-figure {
+	margin-bottom: .3rem;
+}
+
 .stat-description {
 	color: #443C3D;
 	font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+/* Quote */
+
+.quote-banner {
+	padding: 3.5rem 0;
+}
+
+.quote-container {
+	align-items: center;
+	display: flex;
 }
 
 /* News section */
