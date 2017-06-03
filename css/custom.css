@@ -333,24 +333,54 @@ header {
 
 /* News section */
 
-.blog-post {
+.news-section {
+	padding: 4rem 0;
+}
+
+.article-container {
 	display: flex;
 	align-items: flex-start;
 }
 
+.blogpost-preview {
+	padding-left: 1.75rem;
+}
+
+.blogpost-preview h3 {
+	letter-spacing: .025rem;
+	margin-bottom: 1rem;
+}
+
 .article-date {
 	color: #CC9132;
+	display: flex;
+	font-size: .75rem;
+	font-weight: 700;
+	margin-bottom: .625rem;
+}
+
+.article-date img {
+	margin-right: .5rem;
 }
 
 /* Newsletter form */
 
+.newsletter {
+	padding: 2.2rem;
+}
+
 .newsletter-form {
+	align-items: center;
 	color: #FFF;
 	display: flex;
 	font-size: 1.2rem;
 	font-weight: 700;
 	justify-content: center;
 	text-transform: uppercase;
+}
+
+.newsletter-form label {
+	margin-bottom: 0;
 }
 
 .newsletter-form input[type=submit] {
