@@ -22,13 +22,17 @@ h1 {
 }
 
 h2 {
-	color: #D1913E;
+	color: #CC9132;
 	font-size: 1.2rem;
 	font-weight: 700;
 }
 
 h3 {
 	font-size: 1.1rem;
+}
+
+section {
+	padding: 4.66667rem 0 3.5rem 0;
 }
 
 p {
@@ -40,13 +44,13 @@ a {
 }
 
 a:hover {
-	color: #D1913E;
+	color: #CC9132;
 	cursor: pointer;
 	text-decoration: none;
 }
 
 a.to-full-page {
-	color: #D1913E;
+	color: #CC9132;
 }
 
 a.to-full-page:after {
@@ -75,7 +79,7 @@ blockquote:before {
 }
 
 cite {
-	color: #D1913E;
+	color: #CC9132;
 	font-size: 1.06667rem;
 	font-style: normal;
 	font-weight: 600;
@@ -118,7 +122,7 @@ img.favicon {
 }
 
 .background-3 {
-	background-color: #D1913E
+	background-color: #CC9132
 }
 
 .background-4 {
@@ -149,7 +153,7 @@ img.favicon {
 /* Main header/nav */
 
 header {
-	padding: 1.3rem;
+	padding: 1.4rem;
 }
 
 .logo-container {
@@ -164,7 +168,7 @@ header {
 
 .logo-container h1 {
 	align-self: flex-end;
-	color: #D1913E;
+	color: #CC9132;
 	font-family: "Besom";
 	margin-bottom: 0;
 }
@@ -205,16 +209,25 @@ header {
 .banner {
 	background-image: url(../img/png/banner-bg.png);
 	color: #FFF;
+	padding: 8rem 0;
 	text-align: center;
 }
 
+.banner .container {
+	padding: 0 5rem;
+}
+
 .banner h1 {
-	font-size: 2rem;
+	font-size: 1.8rem;
+	letter-spacing: .05rem;
+	margin-bottom: 1.5rem;
 }
 
 .banner p {
-	font-size: 1.06667rem;
+	font-size: 1rem;
 	font-weight: 400;
+	letter-spacing: .025rem;
+	margin-bottom: 2.2rem;
 }
 
 .actions a {
@@ -222,16 +235,21 @@ header {
 	border-radius: 3px;
 	color: inherit;
 	display: inline-block;
-	font-size: 0.93333rem;
-	padding: 1rem;
+	font-size: 0.85rem;
+	font-weight: 600;
+	padding: .6rem 1rem .85rem;
 	text-transform: uppercase;
   width: 167px;
 }
 
 .actions a:hover {
 	background-color: #FFF;
-	color: #D1913E;
+	color: #CC9132;
   text-decoration: none;
+}
+
+.actions a:first-of-type {
+	margin-right: 1rem;
 }
 
 /* Features section */
@@ -243,7 +261,7 @@ header {
 /* Stats section */
 
 .stat-box {
-	background-color: #D1913E;
+	background-color: #CC9132;
 	color: #FFF;
 	display: flex;
 	flex-direction: column;
@@ -271,7 +289,7 @@ header {
 }
 
 .article-date {
-	color: #D1913E;
+	color: #CC9132;
 }
 
 /* Newsletter form */
