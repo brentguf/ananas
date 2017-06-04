@@ -310,6 +310,13 @@ header {
 
 /* Features section */
 
+.features {
+	background-image: url("../img/svg/large-bg-pineapple.svg");
+  background-repeat: no-repeat;
+  background-position: 57.5vw 7.5vh;
+  padding-bottom: 6rem;
+}
+
 .features-ul {
 	list-style: none;
 	padding-top: 1.2rem;
@@ -374,6 +381,9 @@ header {
 /* Quote */
 
 .quote-banner {
+	background-image: url(../img/svg/small-bg-pineapple.svg);
+	background-position: -1% 16%;
+	background-repeat: repeat;
 	padding: 3.5rem 0;
 }
 
