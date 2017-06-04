@@ -179,29 +179,6 @@ img.favicon {
 	margin: 0;
 }
 
-@media screen and (max-width: 992px) {
-	
-	.select-container {
-	  margin-right: 1rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-	
-  .info-bar img.favicon {
-  	margin-right: 0;
-  }
-
-	.info-bar span.contact {
-		display: none;
-	}
-
-	.info-bar a,
-	.info-bar a:last-of-type { 
-    margin-right: 1rem;
-  }
-}
-
 .select-container:before {
   content: "";
   display: block;
@@ -234,6 +211,29 @@ img.favicon {
 	cursor: pointer;
 	outline: none;
   padding: 0 .8rem 0 0;
+}
+
+@media screen and (max-width: 992px) {
+	
+	.select-container {
+	  margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+	
+  .info-bar img.favicon {
+  	margin-right: 0;
+  }
+
+	.info-bar span.contact {
+		display: none;
+	}
+
+	.info-bar a,
+	.info-bar a:last-of-type { 
+    margin-right: 1rem;
+  }
 }
 
 /* Main header/nav */
@@ -288,6 +288,58 @@ header {
 
 .side-items li:last-of-type {
 	margin-right: 0rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+  	width: 100%;
+  }
+
+  .logo-container,
+  .nav-items-container {
+		padding-left: 2.5rem;
+	}
+
+	.nav-items-container {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.side-items {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 576px) {
+
+  .logo-container,
+  .nav-items-container {
+		padding-left: 1.75rem;
+	}
+
+  .nav-items-container {
+		justify-content: flex-start;
+		flex-direction: row;
+	}
+
+  .main-items,
+	.side-items {
+		flex-direction: column;
+	}
+
+	.main-items {
+		margin-right: 0;
+	}
+
+	.side-items {
+		padding: .8rem 0;
+	}
+
+	.main-items li,
+	.side-items li {
+		margin-bottom: .25rem;
+	}
 }
 
 /* Welcome banner */
