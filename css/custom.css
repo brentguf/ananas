@@ -51,6 +51,10 @@ a:hover {
 	text-decoration: none;
 }
 
+a.contact:hover {
+	color: #433B3D;
+}
+
 a.to-full-page {
 	color: #CC9132;
 	font-size: 1rem;
@@ -502,6 +506,8 @@ footer .logo-container {
 	color: #797979;
 	margin-bottom: .5rem;
 }
+
+
 
 .social-links-ul {
 	padding-top: 0;
