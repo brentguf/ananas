@@ -102,6 +102,8 @@ cite {
 }
 
 img {
+	height: auto;
+	max-width: 100%;
 	object-fit: contain;
 }
 
@@ -238,7 +240,7 @@ img.favicon {
 
 /* Main header/nav */
 
-header {
+.navigation {
 	padding: 1.5rem;
 }
 
@@ -288,6 +290,16 @@ header {
 
 .side-items li:last-of-type {
 	margin-right: 0rem;
+}
+
+@media screen and (max-width: 992px) {
+	.nav-items-container {
+		justify-content: flex-start;
+	}
+
+	.main-items li {
+	  margin-right: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -436,6 +448,29 @@ header {
 		margin-bottom: 1rem;
 	}
 }
+
+/* What we do section */
+
+.video-preview {
+	margin-bottom: 2rem;
+}
+
+.sm-md-visible {
+	display: none;
+}
+
+@media screen and (max-width: 992px) {
+	.sm-md-visible {
+	  display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+	.lg-visible {
+	  display: none;
+  }
+}
+
 /* Features section */
 
 .features {
@@ -461,12 +496,6 @@ header {
 
 .features-ul li:last-of-type {
 	margin-bottom: 2rem;
-}
-
-/* What we do section */
-
-.video-preview {
-	margin-right: 1rem;
 }
 
 /* Stats section */
