@@ -315,21 +315,18 @@ header {
 
   .logo-container,
   .nav-items-container {
-		padding-left: 1.75rem;
+		padding-left: 2.5rem;
 	}
 
   .nav-items-container {
 		justify-content: flex-start;
 		flex-direction: row;
+		padding-top: 1rem;
 	}
 
   .main-items,
 	.side-items {
 		flex-direction: column;
-	}
-
-	.main-items {
-		margin-right: 0;
 	}
 
 	.side-items {
@@ -338,7 +335,30 @@ header {
 
 	.main-items li,
 	.side-items li {
-		margin-bottom: .25rem;
+		margin-bottom: .4rem;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.logo-container,
+  .nav-items-container {
+		padding-left: 1.75rem;
+	}
+
+  .main-items {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+  .logo-container {
+		padding-left: 1rem;
+	}
+
+	.nav-items-container {
+		justify-content: center;
+		padding-left: 0rem;
 	}
 }
 
