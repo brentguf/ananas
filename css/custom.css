@@ -468,11 +468,17 @@ header {
 	background-color: #FFF;
 	border: none;
 	color: #CC9132;
+	cursor: pointer;
 	font-size: .8rem;
 	font-weight: 600;
 	letter-spacing: .025rem;
 	text-transform: uppercase;
+	outline: none;
 	padding: .75rem 1.35rem;
+}
+
+.newsletter-action input[type=submit]:hover {
+	background-color: rgba(255,255,255,.9);
 }
 
 /* Footer */
