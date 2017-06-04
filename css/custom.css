@@ -315,11 +315,15 @@ header {
 
   .logo-container,
   .nav-items-container {
-		padding-left: 2.5rem;
+		padding-left: 0;
+	}
+
+	.logo-container {
+		justify-content: center;
 	}
 
   .nav-items-container {
-		justify-content: flex-start;
+		justify-content: center;
 		flex-direction: row;
 		padding-top: 1rem;
 	}
@@ -327,6 +331,11 @@ header {
   .main-items,
 	.side-items {
 		flex-direction: column;
+	}
+
+	.main-items {
+		margin-right: 2rem;
+		text-align: right;
 	}
 
 	.side-items {
@@ -340,10 +349,6 @@ header {
 }
 
 @media screen and (max-width: 450px) {
-	.logo-container,
-  .nav-items-container {
-		padding-left: 1.75rem;
-	}
 
   .main-items {
 		margin-right: 0;
@@ -388,6 +393,10 @@ header {
 	margin-bottom: 2.2rem;
 }
 
+.actions {
+	margin: 0 auto;
+}
+
 .actions a {
 	border: 1px solid #FFF;
 	border-radius: 3px;
@@ -410,6 +419,23 @@ header {
 	margin-right: 1rem;
 }
 
+@media screen and (max-width: 576px) {
+
+  .actions {
+  	align-items: center;
+  	display: flex;
+		flex-direction: column;
+  }
+
+  .actions a {
+  	width: 240px;
+  }
+
+	.actions a:first-of-type {
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+}
 /* Features section */
 
 .features {
