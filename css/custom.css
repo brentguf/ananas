@@ -72,7 +72,7 @@ ul {
 address {
 	color: #797979;;
 	line-height: 1.9rem;
-	margin-top: -.2rem
+	margin-top: -.2rem;
 }
 
 blockquote {
@@ -461,8 +461,8 @@ header {
 	background: rgba(255,255,255,.5);
 	border: none;
 	color: #FFF;
-	font-style: italic;
 	font-family: "Open Sans";
+	font-weight: 700;
 	outline: none;
 	padding: .5rem;
 	width: 330px;
