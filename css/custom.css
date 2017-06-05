@@ -725,6 +725,33 @@ img.favicon {
 	margin-right: .5rem;
 }
 
+@media screen and (max-width: 992px) {
+	
+  .news-section {
+    padding: 4rem 0;
+  }
+
+	.article-container {
+		margin-bottom: 2rem;
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+	.article-container {
+		flex-direction: column;
+	}
+
+	.article-container img.blogpost-preview-img {
+		margin-bottom: 1rem;
+	}
+
+	.blogpost-preview {
+	  padding-left: 0;
+	}
+}
+
+
 /* Newsletter form */
 
 .newsletter {
