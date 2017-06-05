@@ -1015,7 +1015,7 @@ footer .logo-container {
 
   .contact-info address {
   	margin-right: 2rem;
-  	margin-bottom: 0rem;
+  	margin-bottom: 0;
   }
 
 }
