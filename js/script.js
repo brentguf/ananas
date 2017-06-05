@@ -1,4 +1,10 @@
+
+
 $(document).ready(function() {
+
+  window.sr = ScrollReveal();
+  sr.reveal('section');
+
   $('.stat-figure').each(function() {
     var $this = $(this),
         countTo = $this.attr('data-count');
