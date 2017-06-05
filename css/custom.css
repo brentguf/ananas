@@ -306,6 +306,8 @@ img.favicon {
 
   .container {
   	width: 100%;
+  	padding-left: 2rem;
+  	padding-right: 2rem;
   }
 
   .logo-container,
@@ -431,6 +433,12 @@ img.favicon {
 	margin-right: 1rem;
 }
 
+@media screen and (max-width: 992px) {
+	.banner .container {
+	  padding: 0;
+  }
+}
+
 @media screen and (max-width: 576px) {
 
   .actions {
@@ -453,22 +461,6 @@ img.favicon {
 
 .video-preview {
 	margin-bottom: 2rem;
-}
-
-.sm-md-visible {
-	display: none;
-}
-
-@media screen and (max-width: 992px) {
-	.sm-md-visible {
-	  display: block;
-  }
-}
-
-@media screen and (max-width: 992px) {
-	.lg-visible {
-	  display: none;
-  }
 }
 
 /* Features section */
@@ -501,7 +493,17 @@ img.favicon {
 /* Stats section */
 
 .stats {
-	margin-bottom: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1.5rem;
+}
+
+.stat-row {
+	display: flex;
+}
+
+.stat-row:first-of-type {
+	margin-right: 1rem;
 }
 
 .stat-box {
@@ -511,18 +513,19 @@ img.favicon {
 	flex-direction: column;
 	font-size: 2.66667rem;
 	font-weight: 700;
-	margin-right: 20px;
-	max-width: 227px;
-	padding: 1rem 2rem 2.5rem;
+	height: 215px;
+	margin-bottom: 1rem;
+	padding: 1rem 2rem;
+	width: 218px;
 	text-align: center;
 }
 
-.stat-box:last-of-type {
-	margin-right: 0;
+.stat-row .stat-box:first-of-type {
+	margin-right: 1rem;
 }
 
-.stat-icon {
-	margin-bottom: .6rem;
+.stat-icon img {
+	width: 45px;
 }
 
 .stat-figure {
@@ -533,6 +536,104 @@ img.favicon {
 	color: #443C3D;
 	font-size: 1rem;
   line-height: 1.2rem;
+}
+
+@media screen and (max-width: 992px) {
+
+	.stat-box {
+		align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2rem;
+    height: 100px;
+    padding: 0 2rem;
+    width: 325px;
+	}
+
+	.stat-icon img {
+		min-width: 40px;
+	}
+
+  .stat-icon,
+  .stat-figure {
+  	margin-right: 1rem;
+  }
+
+  .stat-description {
+  	text-align: left;
+  }
+
+} 
+
+@media screen and (max-width: 768px) {
+
+
+  .stat-row {
+  	flex-direction: column;
+  	width: 100%;
+	}
+
+	.stat-row:first-of-type {
+		margin-right: 0;
+	}
+
+  .stat-row .stat-box:first-of-type,
+	.stat-box {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.stat-box {
+		justify-content: flex-start;
+	}
+
+	.stat-icon,
+  .stat-figure {
+  	margin-right: 2rem;
+  }
+
+  .stat-description {
+  	font-size: 1.2rem;
+  	line-height: 1.7rem;
+  }
+
+  .sm-invisible {
+  	display: none;
+  }
+
+} 
+
+@media screen and (max-width: 450px) {
+
+  .stats
+  .stat-row {
+  	align-items: center;
+  	justify-content: center;
+  }
+
+	.stat-box,
+	.stat-row .stat-box:first-of-type {
+		flex-direction: column;
+		height: 220px;
+		justify-content: center;
+		min-width: 300px
+		padding: 0 2rem 1rem;
+		width: 90%;
+	}
+
+  .stat-icon {
+  	margin-right: 0;
+  	margin-bottom: .75rem;
+  }
+
+  .stat-figure {
+  	margin-right: 0;
+  }
+
+  .stat-description {
+  	text-align: center;
+  }
+
 }
 
 /* Quote */
