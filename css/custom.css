@@ -98,7 +98,8 @@ cite {
 img {
 	height: auto;
 	max-width: 100%;
-	object-fit: contain;
+	-o-object-fit: contain;
+	   object-fit: contain;
 }
 
 img.favicon {
@@ -113,6 +114,8 @@ img.favicon {
 
 .horizontal-ul {
 	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 0;
 	padding: 1rem 0; 
@@ -152,16 +155,24 @@ img.favicon {
 
 .info-bar {
 	color: #797979;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	font-weight: 300;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 	margin: 0 auto;
 	max-width: 968px;
 	padding: .25rem 0;
 }
 
 .info-bar a {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 	margin-right: 1.4rem;
 }
@@ -239,7 +250,11 @@ img.favicon {
 }
 
 .logo-container {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -248,7 +263,8 @@ img.favicon {
 }
 
 .logo-container h1 {
-	align-self: flex-end;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
 	color: #CC9132;
 	font-family: "Besom";
 	margin-bottom: 0;
@@ -256,9 +272,15 @@ img.favicon {
 }
 
 .nav-items-container {
-	align-items: flex-end;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 	padding-right: 0;
 }
 
@@ -307,8 +329,13 @@ img.favicon {
 	}
 
 	.nav-items-container {
-		align-items: flex-start;
-		flex-direction: column;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.side-items {
@@ -324,18 +351,28 @@ img.favicon {
 	}
 
 	.navigation .logo-container {
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 
   .nav-items-container {
-		justify-content: center;
-		flex-direction: row;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 		padding-top: 1rem;
 	}
 
   .main-items,
 	.side-items {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.main-items {
@@ -367,7 +404,9 @@ img.favicon {
 	}
 
 	.nav-items-container {
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		padding-left: 0rem;
 	}
 }
@@ -439,9 +478,16 @@ img.favicon {
 @media screen and (max-width: 576px) {
 
   .actions {
-  	align-items: center;
+  	-webkit-box-align: center;
+  	    -ms-flex-align: center;
+  	        align-items: center;
+  	display: -webkit-box;
+  	display: -ms-flexbox;
   	display: flex;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
   }
 
   .actions a {
@@ -490,12 +536,17 @@ img.favicon {
 /* Stats section */
 
 .stats {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin-top: 1.5rem;
 }
 
 .stat-row {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -506,8 +557,13 @@ img.favicon {
 .stat-box {
 	background-color: #CC9132;
 	color: #FFF;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	font-size: 2.66667rem;
 	font-weight: 700;
 	height: 215px;
@@ -538,9 +594,16 @@ img.favicon {
 @media screen and (max-width: 992px) {
 
 	.stat-box {
-		align-items: center;
-    flex-direction: row;
-    justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 2rem;
     height: 100px;
     padding: 0 2rem;
@@ -565,7 +628,10 @@ img.favicon {
 @media screen and (max-width: 768px) {
 
   .stat-row {
-  	flex-direction: column;
+  	-webkit-box-orient: vertical;
+  	-webkit-box-direction: normal;
+  	    -ms-flex-direction: column;
+  	        flex-direction: column;
   	width: 100%;
 	}
 
@@ -580,7 +646,9 @@ img.favicon {
 	}
 
 	.stat-box {
-		justify-content: flex-start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 	}
 
 	.stat-icon,
@@ -603,16 +671,25 @@ img.favicon {
 
   .stats
   .stat-row {
-  	align-items: center;
-  	justify-content: center;
+  	-webkit-box-align: center;
+  	    -ms-flex-align: center;
+  	        align-items: center;
+  	-webkit-box-pack: center;
+  	    -ms-flex-pack: center;
+  	        justify-content: center;
   }
 
 	.stat-box,
 	.stat-row .stat-box:first-of-type {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		height: 220px;
-		justify-content: center;
-		min-width: 300px
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		min-width: 300px;
 		padding: 0 2rem 1rem;
 		width: 90%;
 	}
@@ -642,7 +719,11 @@ img.favicon {
 }
 
 .quote-container {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -661,7 +742,10 @@ img.favicon {
 
 @media screen and (max-width: 768px) {
 	.quote-container {
-		flex-direction: column-reverse;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		    -ms-flex-direction: column-reverse;
+		        flex-direction: column-reverse;
 	}
 
 	.quote-container blockquote:before {
@@ -704,8 +788,12 @@ img.favicon {
 }
 
 .article-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: flex-start;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 }
 
 .blogpost-preview {
@@ -719,6 +807,8 @@ img.favicon {
 
 .article-date {
 	color: #CC9132;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	font-size: .75rem;
 	font-weight: 700;
@@ -743,7 +833,10 @@ img.favicon {
 
 @media screen and (max-width: 576px) {
 	.article-container {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.article-container img.blogpost-preview-img {
@@ -762,12 +855,18 @@ img.favicon {
 }
 
 .newsletter-form {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	color: #FFF;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	font-size: 1.2rem;
 	font-weight: 700;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	text-transform: uppercase;
 }
 
@@ -781,6 +880,8 @@ img.favicon {
 }
 
 .newsletter-action {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -827,7 +928,10 @@ img.favicon {
 	}
 
 	.newsletter-action {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
   .newsletter-action input[type=text],
@@ -891,8 +995,11 @@ footer .logo-container {
 	}
 
   .sitemap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-bottom: 0;
   }
 
@@ -901,6 +1008,8 @@ footer .logo-container {
   }
 
   .contact-info {
+  	display: -webkit-box;
+  	display: -ms-flexbox;
   	display: flex;
   }
 
@@ -912,6 +1021,9 @@ footer .logo-container {
 
 @media screen and (max-width: 400px) {
   .contact-info {
-  	flex-direction: column;
+  	-webkit-box-orient: vertical;
+  	-webkit-box-direction: normal;
+  	    -ms-flex-direction: column;
+  	        flex-direction: column;
   }
 }
