@@ -42,7 +42,7 @@ p {
 }
 
 a {
-	color: inherit;
+	color: #797979;
 }
 
 a:hover {
@@ -52,7 +52,8 @@ a:hover {
 }
 
 .info-bar a:hover,
-.sitemap a:hover {
+.sitemap a:hover,
+.contact-info a:hover {
 	color: #433B3D;
 }
 
@@ -795,7 +796,7 @@ img.favicon {
 }
 
 .newsletter-action input[type=submit] {
-	background-color: rgba(255,255,255,.9);
+	background-color: rgba(255,255,255,.95);
 	border: none;
 	color: #CC9132;
 	cursor: pointer;
@@ -805,6 +806,10 @@ img.favicon {
 	text-transform: uppercase;
 	outline: none;
 	padding: .75rem 1.35rem;
+}
+
+.newsletter-action input[type=submit]:hover {
+	background-color: rgba(255,255,255,.85);
 }
 
 @media screen and (max-width: 992px) {
