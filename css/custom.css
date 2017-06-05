@@ -432,6 +432,12 @@ img.favicon {
   }
 }
 
+@media screen and (max-width: 768px) {
+	.banner .container {
+	  padding: 0 2.5rem;
+  }
+}
+
 @media screen and (max-width: 576px) {
 
   .actions {
