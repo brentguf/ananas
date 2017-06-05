@@ -757,7 +757,6 @@ img.favicon {
 	}
 }
 
-
 /* Newsletter form */
 
 .newsletter {
@@ -799,7 +798,7 @@ img.favicon {
 }
 
 .newsletter-action input[type=submit] {
-	background-color: #FFF;
+	background-color: rgba(255,255,255,.9);
 	border: none;
 	color: #CC9132;
 	cursor: pointer;
@@ -811,8 +810,42 @@ img.favicon {
 	padding: .75rem 1.35rem;
 }
 
-.newsletter-action input[type=submit]:hover {
-	background-color: rgba(255,255,255,.9);
+@media screen and (max-width: 992px) {
+
+	.newsletter-message {
+		margin-right: 0;
+	  margin-bottom: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+	.newsletter-form {
+		font-size: 1rem;
+	}
+
+	.newsletter-action {
+		flex-direction: column;
+	}
+
+  .newsletter-action input[type=text],
+  .newsletter-action input[type=submit] {
+  	min-width: 400px;
+  	width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+	.newsletter .container {
+		padding: 0;
+	}
+
+  .newsletter-action input[type=text],
+  .newsletter-action input[type=submit] {
+  	min-width: 300px;
+  }
+
 }
 
 /* Footer */
