@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
   // Scroll reveal
@@ -7,7 +5,6 @@ $(document).ready(function() {
   sr.reveal('section');
 
   // Waypoint
-
   var waypoint = new Waypoint({
     element: document.getElementById('countup-trigger'),
     handler: function() {
@@ -37,7 +34,6 @@ $(document).ready(function() {
       });
     }
   })
-
   
 });
 
