@@ -1015,7 +1015,6 @@ footer .logo-container {
 
   .contact-info address {
   	margin-right: 2rem;
-  	margin-bottom: 0;
   }
 
 }
@@ -1027,4 +1026,8 @@ footer .logo-container {
   	    -ms-flex-direction: column;
   	        flex-direction: column;
   }
+
+   .contact-info address {
+     margin-right: 2rem;
+   }
 }
