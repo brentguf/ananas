@@ -87,13 +87,6 @@ blockquote p {
 	letter-spacing: .04rem;
 }
 
-blockquote:before {
-	content: url("../img/svg/quote.svg");
-	position: absolute;
-	top: 1.6rem;
-	left: 2rem;
-}
-
 cite {
 	color: #CC9132;
 	font-size: 1rem;
@@ -567,7 +560,6 @@ img.favicon {
 
 @media screen and (max-width: 768px) {
 
-
   .stat-row {
   	flex-direction: column;
   	width: 100%;
@@ -648,6 +640,57 @@ img.favicon {
 .quote-container {
 	align-items: center;
 	display: flex;
+}
+
+.quote-container blockquote:before {
+	content: url("../img/svg/quote.svg");
+	position: absolute;
+	top: 1.6rem;
+	left: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .quote-container blockquote:before {
+  	top: .3rem;
+  }	
+}
+
+@media screen and (max-width: 768px) {
+	.quote-container {
+		flex-direction: column-reverse;
+	}
+
+	.quote-container blockquote:before {
+  	top: 13rem;
+  	left: 4rem;
+  }	
+
+	.quote-container img {
+		margin-bottom: 2rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+
+  .quote-container blockquote:before {
+  	content: "";
+  }	
+
+  blockquote {
+  	padding: 0 1rem;
+  }
+
+  blockquote p {
+  	font-size: 1rem;
+  }
+
+  cite:before {
+  	content: "— "
+  }
+
+	.quote-container img {
+		margin-bottom: 2rem;
+	}
 }
 
 /* News section */
