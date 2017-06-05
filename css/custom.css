@@ -286,9 +286,6 @@ img.favicon {
 }
 
 @media screen and (max-width: 992px) {
-	.nav-items-container {
-		justify-content: flex-start;
-	}
 
 	.main-items li {
 	  margin-right: 1rem;
@@ -870,9 +867,46 @@ footer .logo-container {
 	margin-bottom: .5rem;
 }
 
+.contact-info address {
+	margin-bottom: 2rem;
+}
+
+.contact-phone {
+	margin-bottom: .5rem;
+}
+
 .social-links-ul {
 	padding-top: 0;
 }
 
+@media screen and (max-width: 576px) {
 
+	footer .col-sm-4 {
+    margin-bottom: 2rem;
+	}
 
+  .sitemap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .sitemap li {
+  	margin-right: 1rem;
+  }
+
+  .contact-info {
+  	display: flex;
+  }
+
+  .contact-info address {
+  	margin-right: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .contact-info {
+  	flex-direction: column;
+  }
+}
